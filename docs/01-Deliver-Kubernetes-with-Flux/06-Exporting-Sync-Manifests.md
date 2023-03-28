@@ -16,7 +16,7 @@ Export the Source Controller
 flux export source git instavote
 
 # Save the contents
-flux export source git instavote
+flux export source git instavote >> clusters/dev/instavote-gitrepository.yaml
 ```
 
 Export the Kustomizations

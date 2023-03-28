@@ -38,7 +38,7 @@ Trigger an update to test the CD flow by scaling the replicas to 10:
 sed -i '' -E 's@(replicas:).*@\1 10@g' deploy/vote/deployment.yaml
 git add deploy/vote/deployment.yaml
 git commit -m "chore: Update vote replicas to 10"
-git push origin HEAD:refs/heads/flux
+git push origin HEAD:refs/heads/main
 
 # Reconcile
 flux reconcile kustomization vote-dev
