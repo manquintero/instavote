@@ -16,3 +16,13 @@ commonAnnotations:
 commonLabels:
   project: instavote
   env: staging
+
+configMapGenerator:
+  - name: vote-options
+    envs:
+      - options.env
+
+configMapGenerator:
+  - name: vote-options
+    envs:
+      - options.env
