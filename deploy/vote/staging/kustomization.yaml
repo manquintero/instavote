@@ -10,3 +10,6 @@ patchesStrategicMerge:
 replicas:
   - name: vote
     count: 10
+
+commonAnnotations:
+  supported-by: support@fluxcd.io
