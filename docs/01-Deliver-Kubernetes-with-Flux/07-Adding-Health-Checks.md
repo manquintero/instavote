@@ -1,5 +1,4 @@
 # Adding Health Checks
-
 -------
 
 ## Break the Deployment
@@ -43,7 +42,7 @@ flux create kustomization vote-dev \
     --prune=true \
     --interval=1m \
     --target-namespace=instavote \
-    --health-check="Deployment/vote.instavote" \
+    --health-check="Deployment/vote.instavote"
     --export
 
 # Update the Configuration File
@@ -83,5 +82,5 @@ git revert HEAD
 git push origin HEAD:refs/heads/main
 ```
 
---
+---
 Next: [Garbage Collection](./08-Garbage-Collection.md)
