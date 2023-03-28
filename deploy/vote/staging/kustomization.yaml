@@ -13,3 +13,6 @@ replicas:
 
 commonAnnotations:
   supported-by: support@fluxcd.io
+commonLabels:
+  project: instavote
+  env: staging
